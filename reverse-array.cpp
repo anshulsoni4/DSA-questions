@@ -1,38 +1,28 @@
-/******************************************************************************
-
-reverse array 
-
-
-*******************************************************************************/
-#include<bits/stdc++.h>
+#include <iostream>
 using namespace std;
- 
-void printArr(int arr[], int n){
-    cout<<"output - "<<endl;
+
+void arrayPri(int arr[], int n){
     for(int i=0; i<n; i++){
         cout<<arr[i]<<" ";
     }
 }
 
-
-void reverse(int arr[], int st, int en) {
-    
-    if(st<en){
-        swap(arr[st], arr[en]);
-        reverse(arr, st+1, en-1);
+void reverseArray(int arr[], int n){
+    int p1, p2;
+    p1 = 0, p2 = n-1;
+    while(p1<p2){
+        swap(arr[p1], arr[p2]);
+        p1++, p2--;
     }
-    
-}
- 
+    arrayPri(arr, n);
+}    
+
+
+
+
 int main() {
-    int arr1[] = {1,2,3,4};
-    int n=4;
-    
-    reverse(arr1, 0, n-1);
-    printArr(arr1, n);
-    
-   
-    
-   
-    return 0;
+   int n = 5;
+   int arr[] = { 5, 4, 3, 2, 1};
+   reverseArray(arr, n);
+   return 0;
 }
