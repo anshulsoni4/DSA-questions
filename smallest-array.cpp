@@ -1,8 +1,8 @@
 /******************************************************************************
 
-find the smallest no in array
+find the smallest no. in array
 
-sol - we will apply sort() aur fir return first index
+sol - we will apply sort() and after that we will return the first element
 
 *******************************************************************************/
 #include <bits/stdc++.h>
