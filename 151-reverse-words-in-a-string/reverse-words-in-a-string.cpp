@@ -19,10 +19,14 @@ public:
                 temp += s[i];
                 i++;
             }
+
+            // toh temp agar filled hai, and ans khali
             if(temp.size() > 0){
                 if(ans.size() == 0)
+                // ans ko temp bna denge and ans ko return
                 ans = temp;
                 else
+                // nahi toh simply ans ko temp aur ans bnake return
                 ans = temp+" "+ans;
             }
             
