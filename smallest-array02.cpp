@@ -5,25 +5,20 @@ find the smallest no in array
 linear search jesa krdiya, min me first index fir compare
 
 *******************************************************************************/
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int smallestNo(int n, int arr[]){
-    int min = arr[0];
-    for(int i=0; i<n; i++){
-        if(min > arr[i]){
-            min = arr[i];
-        }
-    }
-    return min;
-}
-
-
 int main()
 {
-    int arr1[] = {10,5,2,4,8};
+    int arr[] = {2,6,3,1,8};
     int n = 5;
-    cout<<smallestNo(n, arr1);
-
+    for(int i=0; i<n; i++){
+        if(arr[0] > arr[i]){
+            arr[0] = arr[i];
+        }
+        
+    }
+    cout<<arr[0];
     return 0;
 }
