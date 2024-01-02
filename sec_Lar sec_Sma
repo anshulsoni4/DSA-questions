@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+void lar(int arr[], int n){
+    if(n==0 || n==1){
+        cout<<-1;
+    }
+    sort(arr, arr+n);
+        int smallest = arr[1];
+        int largest = arr[n-2];
+    
+    cout<<smallest<<endl;
+    cout<<largest;
+}
+
+int main()
+{
+    int ans[] = {2,6,3,1,8};
+    int n = 5;
+    
+    lar(ans, n);
+    
+    return 0;
+}
