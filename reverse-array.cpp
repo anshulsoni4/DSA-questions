@@ -26,3 +26,31 @@ int main() {
    reverseArray(arr, n);
    return 0;
 }
+
+
+//////////////////////////////////////////////// ANOTHER METHOD:
+
+#include <bits/stdc++.h>
+// #include<algorithm>
+using namespace std;
+
+void printArr(int arr[], int n){
+    for(int i =0; i<n; i++){
+        cout<<arr[i];
+    }
+}
+
+void revArr(int ans[], int n){
+    reverse(ans, ans+n);
+}
+
+int main()
+{
+    int arr[] = {2,6,3,1,8};
+    int n = 5;
+    
+    revArr(arr, n);
+    printArr(arr, n);
+    
+    return 0;
+}
